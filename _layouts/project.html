@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  {% include header.html %}
+  <main>
+    <div class="container py-5">
+      <article>
+        <p class="mb-2">
+          <a href="/projects/" class="text-decoration-none">&larr; Back to all projects</a>
+        </p>
+        <h1 class="mb-1">{{ page.title }}</h1>
+        <p class="text-secondary mb-4">{{ page.date | date: "%-d %B %Y" }}</p>
+        {% if page.image %}
+        <img src="{{ page.image }}" alt="{{ page.title }}" class="img-fluid rounded mb-4">
+        {% endif %}
+        <div class="project-content">
+          {{ content }}
+        </div>
+      </article>
+    </div>
+  </main>
+  {% include footer.html %}
+</body>
+</html>

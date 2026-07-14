@@ -1,0 +1,32 @@
+<header>
+  <nav class="navbar navbar-expand-md border-bottom bg-white" aria-label="Primary navigation">
+    <div class="container">
+      {% include brand.html class="navbar-brand" %}
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#primaryNav" aria-controls="primaryNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="primaryNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-2 px-0">
+            <a class="nav-link {% if page.url == '/' %}active{% endif %}"
+               {% if page.url == '/' %}aria-current="page"{% endif %} href="/">Home</a>
+          </li>
+          <li class="nav-item mx-2 px-0">
+            <a class="nav-link {% if page.url == '/about/' %}active{% endif %}"
+               {% if page.url == '/about/' %}aria-current="page"{% endif %} href="/about/">About</a>
+          </li>
+          <li class="nav-item mx-2 px-0">
+            <a class="nav-link {% if page.url contains '/projects' %}active{% endif %}"
+               {% if page.url contains '/projects' %}aria-current="page"{% endif %} href="/projects/">Projects</a>
+          </li>
+          <li class="nav-item mx-2 px-0">
+            <a class="nav-link {% if page.url == '/contact/' %}active{% endif %}"
+               {% if page.url == '/contact/' %}aria-current="page"{% endif %} href="/contact/">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,15 @@
+title: Wild Fig Research
+email: hello@wildfigresearch.org.uk
+description: >-
+  Wild Fig Research is an independent research consultancy helping public
+  sector and mission-led organisations understand their users, test their
+  services, and evaluate their impact.
+baseurl: ""
+url: "https://www.wildfigresearch.org.uk"
+
+collections:
+  projects:
+    output: true
+    sort_by: date
+
+destination: docs/

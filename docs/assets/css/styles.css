@@ -14,7 +14,7 @@ body {
   color: var(--bs-primary);
 }
 
-.text-brand-green {
+.text-brand {
   color: var(--bs-primary);
 }
 
@@ -37,7 +37,6 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 2px solid transparent;
-  margin-bottom: calc(var(--bs-border-width, 1px) * -1);
 }
 
 .navbar-nav .nav-link.active {

@@ -13,5 +13,3 @@ permalink: /contact/
     <i class="bi bi-envelope"></i> {{ site.email }}
   </a>
 </p>
-
-<p class="text-secondary mt-4">We typically reply within two working days.</p>

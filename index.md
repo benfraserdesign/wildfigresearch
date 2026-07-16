@@ -2,7 +2,7 @@
 layout: default
 title: Home
 permalink: /
-description: Wild Fig Research is an independent research consultancy in Sheffield, helping VCFSE organisations, universities and the public sector design ethical, participatory research.
+description: Wild Fig Research is an independent research organisation in Sheffield, helping VCFSE organisations, universities and the public sector design ethical, participatory research.
 ---
 
 <div class="row align-items-center g-5">
@@ -14,7 +14,7 @@ description: Wild Fig Research is an independent research consultancy in Sheffie
     <div class="fw-bold text-brand">place-based</div> 
     research</h1>
     <p class="lead text-secondary">
-      Wild Fig Research is an independent research consultancy supporting communities, voluntary, community, faith, social enterprise (VCFSE) organisations, universities, and the public sector to design and deliver participatory research.
+      Wild Fig Research is an independent research organisation supporting communities, voluntary, community, faith, social enterprise (VCFSE) organisations, universities, and the public sector to design and deliver participatory research.
     </p>
     <div class="d-flex flex-column flex-md-row gap-3 mt-4">
       <a href="/projects/" class="btn btn-primary btn-lg">See our projects</a>
@@ -52,9 +52,24 @@ description: Wild Fig Research is an independent research consultancy in Sheffie
     <p class="text-secondary">Clear logic models and outcome measures that connect activity to real change.</p>
   </div>
   <div class="col-md-4">
-    <i class="bi bi-recycle fs-2 mb-2 d-block text-brand"></i>
-    <h2 class="h5">Regenerative design</h2>
-    <p class="text-secondary">Approaches that build lasting capacity in communities and organisations, not just one-off outputs.</p>
+    <i class="bi bi-bar-chart-line fs-2 mb-2 d-block text-brand"></i>
+    <h2 class="h5">Quantitative research</h2>
+    <p class="text-secondary">Surveys and statistical analysis that add a robust evidence base alongside qualitative insight.</p>
+  </div>
+  <div class="col-md-4">
+    <i class="bi bi-shield-check fs-2 mb-2 d-block text-brand"></i>
+    <h2 class="h5">Research ethics &amp; data management</h2>
+    <p class="text-secondary">Rigorous ethical approval, informed consent and secure handling of sensitive data.</p>
+  </div>
+  <div class="col-md-4">
+    <i class="bi bi-pencil-square fs-2 mb-2 d-block text-brand"></i>
+    <h2 class="h5">Content design and user research</h2>
+    <p class="text-secondary">Plain language and accessible content, shaped by research into what users actually need.</p>
+  </div>
+  <div class="col-md-4">
+    <i class="bi bi-arrow-repeat fs-2 mb-2 d-block text-brand"></i>
+    <h2 class="h5">Systems change</h2>
+    <p class="text-secondary">Working across sectors and services to shift the conditions that hold problems in place.</p>
   </div>
 </div>
 

@@ -1,6 +1,6 @@
 # Wild Fig Research
 
-Marketing site for Wild Fig Research, an independent research consultancy. Built with Jekyll + Bootstrap.
+Marketing site for Wild Fig Research, an independent research organisation. Built with Jekyll + Bootstrap.
 
 ## Local development
 

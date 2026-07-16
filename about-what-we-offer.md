@@ -1,7 +1,7 @@
 ---
 layout: about
-title: Skills
-permalink: /about/skills/
+title: What we offer
+permalink: /about/about-what-we-offer/
 description: Our research skills — co-production, participatory and visual research, impact evaluation, theories of change, regenerative design and more.
 ---
 
@@ -11,10 +11,8 @@ description: Our research skills — co-production, participatory and visual res
   <li class="col"><i class="bi bi-check2 text-primary me-2"></i>Qualitative and visual research</li>
   <li class="col"><i class="bi bi-check2 text-primary me-2"></i>Impact evaluation</li>
   <li class="col"><i class="bi bi-check2 text-primary me-2"></i>Theories of change &amp; outcomes measurement</li>
-  <li class="col"><i class="bi bi-check2 text-primary me-2"></i>Regenerative design</li>
   <li class="col"><i class="bi bi-check2 text-primary me-2"></i>Quantitative research</li>
   <li class="col"><i class="bi bi-check2 text-primary me-2"></i>Research ethics &amp; data management</li>
-  <li class="col"><i class="bi bi-check2 text-primary me-2"></i>Content design</li>
-  <li class="col"><i class="bi bi-check2 text-primary me-2"></i>User research</li>
+  <li class="col"><i class="bi bi-check2 text-primary me-2"></i>Content design and user research</li>
   <li class="col"><i class="bi bi-check2 text-primary me-2"></i>Systems change</li>
 </ul>

@@ -13,6 +13,10 @@ body {
   font-family: var(--bs-font-sans-serif);
 }
 
+p {
+  max-width: 880px;
+}
+
 .navbar-brand,
 .brand-link {
   color: var(--bs-primary);

@@ -7,7 +7,7 @@
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="primaryNav">
+      <div class="collapse navbar-collapse align-self-end" id="primaryNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item mx-2 px-0">
             <a class="nav-link {% if page.url == '/' %}active{% endif %}"
@@ -30,3 +30,13 @@
     </div>
   </nav>
 </header>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DTHBHW0DS7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DTHBHW0DS7');
+</script>

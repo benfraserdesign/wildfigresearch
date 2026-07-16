@@ -1,0 +1,27 @@
+<div class="alert alert-dismissible fade text-center border-top bg-white m-0 rounded-0 position-fixed bottom-0 start-0 w-100" style="z-index: 1050;" role="alert" id="cookieAlert">
+  <div class="container">
+    <p class="fs-6 mb-2">This site uses a cookie to remember that you've dismissed this message. Read our <a href="/cookies/" class="alert-link">cookie policy</a>.</p>
+    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="alert" aria-label="Accept cookies">OK</button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var cookieAlert = document.getElementById('cookieAlert');
+    if (!cookieAlert) return;
+
+    function getCookie(name) {
+      var match = document.cookie.match('(?:^|; )' + name + '=([^;]*)');
+      return match ? decodeURIComponent(match[1]) : null;
+    }
+
+    if (!getCookie('cookiesAccepted')) {
+      cookieAlert.classList.add('show');
+    }
+
+    cookieAlert.addEventListener('closed.bs.alert', function () {
+      var expires = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toUTCString();
+      document.cookie = 'cookiesAccepted=true; expires=' + expires + '; path=/';
+    });
+  })();
+</script>

@@ -7,6 +7,13 @@
   <title>Youth Service User Research | Wild Fig Research</title>
   <meta name="description" content="Wild Fig Research is an independent research consultancy helping public sector and mission-led organisations understand their users, test their services, and evaluate their impact.">
 
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+  <link rel="icon" href="/assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -23,11 +30,40 @@
 </head>
 
 <body>
+  <div class="alert alert-dismissible fade text-center border-top bg-white m-0 rounded-0 position-fixed bottom-0 start-0 w-100" style="z-index: 1050;" role="alert" id="cookieAlert">
+  <div class="container">
+    <p class="fs-6 mb-2">This site uses a cookie to remember that you've dismissed this message. Read our <a href="/cookies/" class="alert-link">cookie policy</a>.</p>
+    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="alert" aria-label="Accept cookies">OK</button>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var cookieAlert = document.getElementById('cookieAlert');
+    if (!cookieAlert) return;
+
+    function getCookie(name) {
+      var match = document.cookie.match('(?:^|; )' + name + '=([^;]*)');
+      return match ? decodeURIComponent(match[1]) : null;
+    }
+
+    if (!getCookie('cookiesAccepted')) {
+      cookieAlert.classList.add('show');
+    }
+
+    cookieAlert.addEventListener('closed.bs.alert', function () {
+      var expires = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toUTCString();
+      document.cookie = 'cookiesAccepted=true; expires=' + expires + '; path=/';
+    });
+  })();
+</script>
+
   <header>
   <nav class="navbar navbar-expand-md border-bottom bg-white p-0" aria-label="Primary navigation">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="/">
-  Wild Fig Research
+      <a class="navbar-brand py-3" href="/">
+  <img src="/assets/images/wild-fig-logo.png" alt="Wild Fig Research logo - depicting an illustration of an open fig" width="240" class="d-inline-block">
+  <span class="visually-hidden">Wild Fig Research</span>
 </a>
 
       <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse"
@@ -35,7 +71,7 @@
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="primaryNav">
+      <div class="collapse navbar-collapse align-self-end" id="primaryNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item mx-2 px-0">
             <a class="nav-link "
@@ -58,6 +94,16 @@
     </div>
   </nav>
 </header>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DTHBHW0DS7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DTHBHW0DS7');
+</script>
 
   <main>
     <div class="container py-5">
@@ -83,30 +129,39 @@
   </main>
   <footer class="border-top py-4 mt-5 bg-light">
   <div class="container">
-    <div class="mb-3">
-      <a class="brand-link text-decoration-none fw-bold" href="/">
-  Wild Fig Research
-</a>
+    <div class="d-flex flex-column flex-lg-row justify-content-between gap-2">
+      <div>
+        <div class="mb-3">
+          <a class=" fw-bold d-inline-flex align-items-center gap-2" href="/">
+            <img src="/assets/images/wild-fig-logo.png" alt="Wild Fig Research logo - depicting an illustration of an open fig" width="240" class="d-inline-block">
+          </a>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/">Home</a></li>
+            <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/about/">About</a></li>
+            <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/projects/">Projects</a></li>
+            <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="text-secondary small mb-4 mt-2 fw-light">&copy; <span id="copyrightYear"></span> Wild Fig Research. All rights reserved.</p>
+      </div>
 
-    </div>
-    <div class="d-flex flex-column flex-md-row justify-content-between gap-3">
-      <nav aria-label="Footer navigation">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/">Home</a></li>
-          <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/about/">About</a></li>
-          <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/projects/">Projects</a></li>
-          <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/contact/">Contact</a></li>
-        </ul>
-      </nav>
-      <nav aria-label="Legal navigation">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><a class="link-secondary fw-light text-decoration-none" href="/accessibility/">Accessibility</a></li>
-          <li class="list-inline-item"><a class="link-secondary fw-light text-decoration-none" href="/privacy/">Privacy</a></li>
-          <li class="list-inline-item"><a class="link-secondary fw-light text-decoration-none" href="/cookies/">Cookies</a></li>
+      <nav aria-label="Legal navigation" class="text-lg-end">
+        <ul class="list-unstyled mb-0 small">
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/accessibility/">Accessibility</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/privacy/">Privacy</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/cookies/">Cookies</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/intellectual-property/">Intellectual property stance / open research</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/copyright/">Copyright</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/ai-statement/">AI statement</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/modern-slavery-statement/">Modern slavery statement</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/ethical-policy/">Ethical policy</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/safeguarding-policy/">Safeguarding policy</a></li>
+          <li class="mb-0"><a class="link-secondary fw-light text-decoration-none" href="/secure-data-handling/">Secure data handling and storage protocols</a></li>
         </ul>
       </nav>
     </div>
-    <p class="text-secondary small mb-4 mt-2 fw-light">&copy; <span id="copyrightYear"></span> Wild Fig Research. All rights reserved.</p>
   </div>
 </footer>
 

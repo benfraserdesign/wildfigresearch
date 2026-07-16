@@ -2,6 +2,7 @@
 <html lang="en">
 {% include head.html %}
 <body{% if page.scrollspy %} data-bs-spy="scroll" data-bs-target="#{{ page.scrollspy }}" tabindex="0"{% endif %}>
+  {% include cookies.html %}
   {% include header.html %}
   <main>
     <div class="container py-5">

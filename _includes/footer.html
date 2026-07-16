@@ -1,26 +1,38 @@
 <footer class="border-top py-4 mt-5 bg-light">
   <div class="container">
-    <div class="mb-3">
-      {% include brand.html class="brand-link text-decoration-none" %}
-    </div>
-    <div class="d-flex flex-column flex-md-row justify-content-between gap-3">
-      <nav aria-label="Footer navigation">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/">Home</a></li>
-          <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/about/">About</a></li>
-          <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/projects/">Projects</a></li>
-          <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/contact/">Contact</a></li>
+    <div class="d-flex flex-column flex-lg-row justify-content-between gap-2">
+      <div>
+        <div class="mb-3">
+          <a class="{{ include.class }} fw-bold d-inline-flex align-items-center gap-2" href="{{ include.href | default: '/' }}">
+            <img src="/assets/images/wild-fig-logo.png" alt="Wild Fig Research logo - depicting an illustration of an open fig" width="240" class="d-inline-block">
+          </a>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/">Home</a></li>
+            <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/about/">About</a></li>
+            <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/projects/">Projects</a></li>
+            <li class="list-inline-item"><a class="link-secondary text-decoration-none" href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="text-secondary small mb-4 mt-2 fw-light">&copy; <span id="copyrightYear"></span> {{ site.title }}. All rights reserved.</p>
+      </div>
+
+      <nav aria-label="Legal navigation" class="text-lg-end">
+        <ul class="list-unstyled mb-0 small">
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/accessibility/">Accessibility</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/privacy/">Privacy</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/cookies/">Cookies</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/intellectual-property/">Intellectual property stance / open research</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/copyright/">Copyright</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/ai-statement/">AI statement</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/modern-slavery-statement/">Modern slavery statement</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/ethical-policy/">Ethical policy</a></li>
+          <li class="mb-2"><a class="link-secondary fw-light text-decoration-none" href="/safeguarding-policy/">Safeguarding policy</a></li>
+          <li class="mb-0"><a class="link-secondary fw-light text-decoration-none" href="/secure-data-handling/">Secure data handling and storage protocols</a></li>
         </ul>
       </nav>
-      <nav aria-label="Legal navigation">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><a class="link-secondary fw-light text-decoration-none" href="/accessibility/">Accessibility</a></li>
-          <li class="list-inline-item"><a class="link-secondary fw-light text-decoration-none" href="/privacy/">Privacy</a></li>
-          <li class="list-inline-item"><a class="link-secondary fw-light text-decoration-none" href="/cookies/">Cookies</a></li>
-        </ul>
-      </nav>
     </div>
-    <p class="text-secondary small mb-4 mt-2 fw-light">&copy; <span id="copyrightYear"></span> {{ site.title }}. All rights reserved.</p>
   </div>
 </footer>
 

@@ -4,9 +4,7 @@ title: Privacy
 permalink: /privacy/
 ---
 
-<h1 class="mb-4">Privacy Policy</h1>
-
-<p><em>Placeholder text — have this reviewed by a solicitor before publishing.</em></p>
+<h1 class="mb-4">Privacy policy</h1>
 
 <p>Wild Fig Research respects your privacy. This page will explain what personal data we collect (for example, when you contact us by email), why we collect it, how long we keep it, and your rights under UK GDPR.</p>
 

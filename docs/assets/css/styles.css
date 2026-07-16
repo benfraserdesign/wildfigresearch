@@ -1,8 +1,12 @@
 :root {
   --bs-font-sans-serif: "Lexend", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-primary: #4b6a4f;
-  --bs-primary-rgb: 75, 106, 79;
+  --bs-primary: #753d63;
+  --bs-primary-rgb: 117, 61, 99;
+  --bs-secondary: #495057;
+  --bs-secondary-rgb: 73, 80, 87;
+  --bs-link-color-rgb: var(--bs-primary-rgb);
+  --bs-link-hover-color-rgb: 152, 110, 138;
 }
 
 body {
@@ -21,10 +25,10 @@ body {
 .btn-primary {
   --bs-btn-bg: var(--bs-primary);
   --bs-btn-border-color: var(--bs-primary);
-  --bs-btn-hover-bg: #3a5240;
-  --bs-btn-hover-border-color: #3a5240;
-  --bs-btn-active-bg: #2f4434;
-  --bs-btn-active-border-color: #2f4434;
+  --bs-btn-hover-bg: #45293c;
+  --bs-btn-hover-border-color: #45293c;
+  --bs-btn-active-bg: #382131;
+  --bs-btn-active-border-color: #382131;
   --bs-btn-disabled-bg: var(--bs-primary);
   --bs-btn-disabled-border-color: var(--bs-primary);
 }
@@ -72,5 +76,11 @@ body {
 @media (min-width: 1200px) {
   .container {
     max-width: 1080px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    width: 100% !important;
   }
 }

@@ -2,6 +2,7 @@
 layout: default
 title: Contact
 permalink: /contact/
+description: Get in touch with Wild Fig Research to talk about a research or evaluation project.
 ---
 
 <h1 class="mb-4">Contact</h1>

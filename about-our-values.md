@@ -2,6 +2,7 @@
 layout: about
 title: Our values
 permalink: /about/our-values/
+description: Our values — learning, hope, contribution, inclusive practice, creative outputs and adaptive partnership.
 ---
 
 <div class="mb-3">

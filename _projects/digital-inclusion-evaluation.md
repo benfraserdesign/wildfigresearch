@@ -4,6 +4,7 @@ title: "Digital Inclusion Evaluation"
 date: 2025-06-18
 image: /assets/images/projects/digital-inclusion-evaluation.svg
 permalink: /projects/digital-inclusion-evaluation/
+description: An evaluation of a two-year digital inclusion programme across community libraries, using surveys, usage data and interviews to assess impact.
 ---
 
 <p class="lead">An evaluation of a two-year digital inclusion programme delivered across a network of community libraries.</p>

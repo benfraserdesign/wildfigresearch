@@ -2,6 +2,7 @@
 layout: about
 title: What we do
 permalink: /about/
+description: What Wild Fig Research does — ethical, relational, place-based participatory research and evaluation for communities, VCFSE organisations and the public sector.
 ---
 
 <p>We support communities, voluntary, community, faith, social enterprise (VCFSE) organisations, universities, and the public sector to design and deliver participatory research that is ethical, relational, and rooted in place. Drawing on our deep local knowledge of South Yorkshire and connections across the UK Higher Education and research sector.</p>

@@ -2,6 +2,7 @@
 layout: default
 title: Modern slavery statement
 permalink: /modern-slavery-statement/
+description: Wild Fig Research's commitment to preventing modern slavery and human trafficking in our business and supply chains.
 ---
 
 <h1 class="mb-4">Modern slavery statement</h1>

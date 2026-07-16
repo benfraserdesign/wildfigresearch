@@ -2,6 +2,7 @@
 layout: default
 title: Safeguarding policy
 permalink: /safeguarding-policy/
+description: How Wild Fig Research protects the welfare of children and adults at risk who take part in our research.
 ---
 
 <h1 class="mb-4">Safeguarding policy</h1>

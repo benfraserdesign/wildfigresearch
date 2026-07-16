@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <title>{% if page.url == '/' %}{{ site.title }} | Participatory research consultancy, Sheffield{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
 
   <!-- Favicons -->

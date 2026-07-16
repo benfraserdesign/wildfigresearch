@@ -2,6 +2,7 @@
 layout: default
 title: Intellectual property stance / open research
 permalink: /intellectual-property/
+description: Wild Fig Research's intellectual property stance and approach to open research.
 ---
 
 <h1 class="mb-4">Intellectual property stance / open research</h1>

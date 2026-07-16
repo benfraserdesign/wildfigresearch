@@ -6,7 +6,7 @@
   --bs-secondary: #495057;
   --bs-secondary-rgb: 73, 80, 87;
   --bs-link-color-rgb: var(--bs-primary-rgb);
-  --bs-link-hover-color-rgb: 152, 110, 138;
+  --bs-link-hover-color-rgb: 69, 41, 60;
 }
 
 body {

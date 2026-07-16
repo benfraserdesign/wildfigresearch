@@ -2,6 +2,7 @@
 layout: default
 title: Ethical policy
 permalink: /ethical-policy/
+description: The ethical principles and approval processes that guide how Wild Fig Research designs and delivers research with people.
 ---
 
 <h1 class="mb-4">Ethical policy</h1>

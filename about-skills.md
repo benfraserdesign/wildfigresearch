@@ -2,6 +2,7 @@
 layout: about
 title: Skills
 permalink: /about/skills/
+description: Our research skills — co-production, participatory and visual research, impact evaluation, theories of change, regenerative design and more.
 ---
 
 <ul class="row row-cols-1 row-cols-sm-2 g-2 list-unstyled mb-0">

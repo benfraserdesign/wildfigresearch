@@ -2,6 +2,7 @@
 layout: default
 title: Copyright
 permalink: /copyright/
+description: Copyright ownership of content on this site and in Wild Fig Research's published outputs, and how to request reuse permission.
 ---
 
 <h1 class="mb-4">Copyright</h1>

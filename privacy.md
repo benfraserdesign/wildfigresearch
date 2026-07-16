@@ -2,6 +2,7 @@
 layout: default
 title: Privacy
 permalink: /privacy/
+description: Wild Fig Research's privacy policy — what personal data we collect, why, how long we keep it, and your rights under UK GDPR.
 ---
 
 <h1 class="mb-4">Privacy policy</h1>

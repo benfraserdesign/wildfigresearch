@@ -2,6 +2,7 @@
 layout: default
 title: Accessibility
 permalink: /accessibility/
+description: Wild Fig Research's accessibility statement and WCAG 2.1 AA commitment for this website.
 ---
 
 <h1 class="mb-4">Accessibility statement</h1>

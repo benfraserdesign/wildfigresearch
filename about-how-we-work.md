@@ -2,6 +2,7 @@
 layout: about
 title: How we work
 permalink: /about/how-we-work/
+description: How we work — we listen first, then design a rigorous, evidence-driven research approach grounded in creative and inclusive methods.
 ---
 
 <p>We start by listening to what communities and organisations want to know, and then design our research approach to fit.</p>

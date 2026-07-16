@@ -2,6 +2,7 @@
 layout: default
 title: Cookies
 permalink: /cookies/
+description: Wild Fig Research's cookie policy — the cookies we use, including Google Analytics, and how to opt out.
 ---
 
 <h1 class="mb-4">Cookie policy</h1>

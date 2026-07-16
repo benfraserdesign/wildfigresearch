@@ -4,6 +4,7 @@ title: "Community Health Needs Assessment"
 date: 2025-11-03
 image: /assets/images/projects/community-health-needs-assessment.svg
 permalink: /projects/community-health-needs-assessment/
+description: A mixed-methods needs assessment for a regional health partnership, identifying gaps in access to primary care services.
 ---
 
 <p class="lead">A mixed-methods needs assessment commissioned by a regional health partnership to identify gaps in access to primary care services.</p>

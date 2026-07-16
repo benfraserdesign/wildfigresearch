@@ -2,6 +2,7 @@
 layout: default
 title: Secure data handling and storage protocols
 permalink: /secure-data-handling/
+description: How Wild Fig Research collects, stores and disposes of research data securely.
 ---
 
 <h1 class="mb-4">Secure data handling and storage protocols</h1>

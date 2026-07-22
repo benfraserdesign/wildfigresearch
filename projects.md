@@ -3,6 +3,7 @@ layout: default
 title: Projects
 permalink: /projects/
 description: A selection of participatory research and evaluation projects Wild Fig Research has delivered for clients.
+sitemap: false
 ---
 
 <h1 class="mb-4">Projects</h1>

@@ -14,10 +14,10 @@ description: Wild Fig Research is an independent research organisation in Sheffi
     <div class="fw-bold text-brand">place-based</div> 
     research</h1>
     <p class="lead text-secondary">
-      Wild Fig Research is an independent research organisation supporting communities, voluntary, community, faith, social enterprise (VCFSE) organisations, universities, and the public sector to design and deliver participatory research.
+      Wild Fig Research is a Sheffield-based organisation that works with communities, VCFSE (voluntary, community, faith and social enterprise) organisations, universities, and the public sector to design and deliver participatory research.
     </p>
     <div class="d-flex flex-column flex-md-row gap-3 mt-4">
-      <a href="/projects/" class="btn btn-primary btn-lg">See our projects</a>
+      <a href="/about/" class="btn btn-primary btn-lg">Read more about Wild Fig Research</a>
       <a href="/contact/" class="btn btn-outline-secondary btn-lg">Get in touch</a>
     </div>
   </div>

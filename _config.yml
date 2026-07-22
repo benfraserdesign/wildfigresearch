@@ -12,6 +12,13 @@ collections:
     output: true
     sort_by: date
 
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      sitemap: false
+
 plugins:
   - jekyll-sitemap
 

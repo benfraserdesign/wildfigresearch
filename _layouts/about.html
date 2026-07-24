@@ -1,14 +1,6 @@
 ---
 layout: default
 ---
-<h1 class="mb-4">About Wild Fig Research</h1>
-
-<p class="lead mb-2">Wild Fig Research is a non-profit participatory research organisation based in Sheffield, working locally, regionally, nationally and internationally with diverse communities and organisations. </p>
-
-<p class="lead mb-2">We design and deliver participatory research with communities, VCFSE (voluntary, community, faith and social enterprise) organisations, universities, and the public sector - shifting thinking and practice at every level, from grassroots priorities to institutional decision-making.</p>
-
-<p class="lead mb-5">We're set up as a company limited by guarantee. This means there are no shareholders, no distributed profit, and all surplus is reinvested in the work.</p>
-
 <div class="row">
   <div class="col-lg-3">
     {% include about-nav.html %}
@@ -17,5 +9,29 @@ layout: default
   <div class="col-lg-9">
     <h2 class="mb-4">{{ page.title }}</h2>
     {{ content }}
+
+    {% assign about_urls = "/about/,/about/what-we-do/,/about/about-what-we-offer/,/about/how-we-work/,/about/who-we-are/,/about/where-we-work/,/about/our-values/" | split: "," %}
+    {% assign about_titles = "About us,What we do,What we offer,How we work,Who we are,Where we work,Our values" | split: "," %}
+    {% assign current_index = nil %}
+    {% for url in about_urls %}
+      {% if url == page.url %}
+        {% assign current_index = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
+
+    {% if current_index %}
+      {% assign prev_index = current_index | minus: 1 %}
+      {% assign next_index = current_index | plus: 1 %}
+      <nav class="d-flex justify-content-between border-top pt-4 mt-5" aria-label="About section navigation">
+        {% if current_index > 0 %}
+          <a class="link-secondary text-decoration-none" href="{{ about_urls[prev_index] }}">&larr; {{ about_titles[prev_index] }}</a>
+        {% else %}
+          <span></span>
+        {% endif %}
+        {% if next_index < about_urls.size %}
+          <a class="link-secondary text-decoration-none text-end" href="{{ about_urls[next_index] }}">{{ about_titles[next_index] }} &rarr;</a>
+        {% endif %}
+      </nav>
+    {% endif %}
   </div>
 </div>

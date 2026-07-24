@@ -1,7 +1,7 @@
 ---
 layout: about
 title: What we do
-permalink: /about/
+permalink: /about/what-we-do/
 description: What Wild Fig Research does — ethical, relational, place-based participatory research and evaluation for communities, VCFSE organisations and the public sector.
 ---
 

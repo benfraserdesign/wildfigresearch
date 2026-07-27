@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  {% include cookies.html %}
+  {% include header.html %}
+  <main>
+    <div class="container py-5">
+      <article>
+        <p class="mb-4">
+          <a href="/about/who-we-are/" class="text-decoration-none">&larr; Back to who we are</a>
+        </p>
+        <div class="row align-items-center g-4 mb-4">
+          {% if page.image %}
+          <div class="col-auto">
+            <img src="{{ page.image }}" alt="{{ page.title }}" class="rounded-circle object-fit-cover" width="120" height="120" style="object-position: top;">
+          </div>
+          {% endif %}
+          <div class="col">
+            <h1 class="mb-1">{{ page.title }}</h1>
+            {% if page.credentials %}<p class="text-secondary mb-1">{{ page.credentials }}</p>{% endif %}
+            {% if page.role %}<p class="fst-italic mb-0">{{ page.role }}</p>{% endif %}
+          </div>
+        </div>
+        <div class="bio-content">
+          {{ content }}
+        </div>
+        {% if page.email %}
+        <p class="mt-4 mb-0">Get in touch - <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+        {% endif %}
+        {% if page.linkedin %}
+        <p class="mb-0"><a href="{{ page.linkedin }}" target="_blank">Follow {{ page.first_name }} on LinkedIn</a></p>
+        {% endif %}
+      </article>
+    </div>
+  </main>
+  {% include footer.html %}
+</body>
+</html>

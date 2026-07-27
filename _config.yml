@@ -11,6 +11,8 @@ collections:
   projects:
     output: true
     sort_by: date
+  team:
+    output: true
 
 defaults:
   - scope:

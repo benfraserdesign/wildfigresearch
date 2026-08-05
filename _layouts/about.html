@@ -10,8 +10,8 @@ layout: default
     <h2 class="mb-4">{{ page.title }}</h2>
     {{ content }}
 
-    {% assign about_urls = "/about/,/about/our-story/,/about/what-we-do/,/about/about-what-we-offer/,/about/how-we-work/,/about/who-we-are/,/about/where-we-work/,/about/our-values/" | split: "," %}
-    {% assign about_titles = "About us,Our story,What we do,What we offer,How we work,Who we are,Where we work,Our values" | split: "," %}
+    {% assign about_urls = "/about/,/about/our-story/,/about/what-we-do/,/about/about-what-we-offer/,/about/how-we-work/,/about/who-we-are/,/about/our-values/" | split: "," %}
+    {% assign about_titles = "About us,Our story,What we do,What we offer,How we work,Who we are,Our values" | split: "," %}
     {% assign current_index = nil %}
     {% for url in about_urls %}
       {% if url == page.url %}

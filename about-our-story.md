@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Our story
+title: The story behind Wild Fig Research
 permalink: /about/our-story/
 description: The story behind Wild Fig Research — why we're named after the wild fig trees growing along Sheffield's River Don.
 ---

@@ -17,7 +17,7 @@ description: Wild Fig Research is a Sheffield-based organisation working with co
       Wild Fig Research is a Sheffield-based organisation that works with communities, VCFSE (voluntary, community, faith and social enterprise) organisations, universities, and the public sector to design and deliver participatory research.
     </p>
     <div class="d-flex flex-column flex-md-row gap-3 mt-4">
-      <a href="/about/" class="btn btn-primary btn-lg">Read more about Wild Fig Research</a>
+      <a href="/projects/" class="btn btn-primary btn-lg">See our work</a>
       <a href="/contact/" class="btn btn-outline-secondary btn-lg">Get in touch</a>
     </div>
   </div>
@@ -25,56 +25,92 @@ description: Wild Fig Research is a Sheffield-based organisation working with co
 
 <hr class="my-5">
 
+<h2 class="mb-4">What we offer</h2>
+
 <div class="row g-4">
   <div class="col-md-4">
     <i class="bi bi-people fs-2 mb-2 d-block text-brand"></i>
-    <h2 class="h5">Co-production</h2>
+    <h3 class="h5">Co-production</h3>
     <p class="text-secondary">Designing research and services together with the people they're for, not just about them.</p>
   </div>
   <div class="col-md-4">
     <i class="bi bi-chat-square-text fs-2 mb-2 d-block text-brand"></i>
-    <h2 class="h5">Participatory research</h2>
+    <h3 class="h5">Participatory research</h3>
     <p class="text-secondary">Methods that put lived experience at the centre, from co-design workshops to peer research.</p>
   </div>
   <div class="col-md-4">
     <i class="bi bi-camera fs-2 mb-2 d-block text-brand"></i>
-    <h2 class="h5">Qualitative and visual research</h2>
+    <h3 class="h5">Qualitative and visual research</h3>
     <p class="text-secondary">Interviews, ethnography and creative methods that surface what numbers alone can't show.</p>
   </div>
   <div class="col-md-4">
     <i class="bi bi-clipboard-data fs-2 mb-2 d-block text-brand"></i>
-    <h2 class="h5">Impact evaluation</h2>
+    <h3 class="h5">Impact evaluation</h3>
     <p class="text-secondary">Mixed-methods evaluation frameworks that show what's working, for whom, and why.</p>
   </div>
   <div class="col-md-4">
     <i class="bi bi-diagram-2 fs-2 mb-2 d-block text-brand"></i>
-    <h2 class="h5">Theories of change</h2>
+    <h3 class="h5">Theories of change</h3>
     <p class="text-secondary">Clear logic models and outcome measures that connect activity to real change.</p>
   </div>
   <div class="col-md-4">
     <i class="bi bi-bar-chart-line fs-2 mb-2 d-block text-brand"></i>
-    <h2 class="h5">Quantitative research</h2>
+    <h3 class="h5">Quantitative research</h3>
     <p class="text-secondary">Surveys and statistical analysis that add a robust evidence base alongside qualitative insight.</p>
   </div>
   <div class="col-md-4">
     <i class="bi bi-shield-check fs-2 mb-2 d-block text-brand"></i>
-    <h2 class="h5">Research ethics &amp; data management</h2>
+    <h3 class="h5">Research ethics &amp; data management</h3>
     <p class="text-secondary">Rigorous ethical approval, informed consent and secure handling of sensitive data.</p>
   </div>
   <div class="col-md-4">
     <i class="bi bi-pencil-square fs-2 mb-2 d-block text-brand"></i>
-    <h2 class="h5">Content design &amp; user research</h2>
+    <h3 class="h5">Content design &amp; user research</h3>
     <p class="text-secondary">Plain language and accessible content, shaped by research into what users actually need.</p>
   </div>
   <div class="col-md-4">
     <i class="bi bi-arrow-repeat fs-2 mb-2 d-block text-brand"></i>
-    <h2 class="h5">Systems change</h2>
+    <h3 class="h5">Systems change</h3>
     <p class="text-secondary">Working across sectors and services to shift the conditions that hold problems in place.</p>
   </div>
 </div>
 
 <p class="mt-4 mb-0">
   <a href="/about/" class="text-decoration-none fs-5 fw-medium">
-    Read more about what we do <i class="bi bi-chevron-right small"></i>
+    Read more about Wild Fig Research <i class="bi bi-chevron-right small"></i>
+  </a>
+</p>
+
+<hr class="my-5">
+
+<h2 class="mb-4">Our recent work</h2>
+
+{% assign recent_projects = site.projects | sort: "date" | reverse %}
+{% assign recent_projects = recent_projects | slice: 0, 3 %}
+<div class="row g-4">
+  {% for project in recent_projects %}
+  {% case project.type %}
+    {% when 'research' %}{% assign card_type_name = 'Research' %}
+    {% when 'impact-evaluation' %}{% assign card_type_name = 'Impact and evaluation' %}
+    {% when 'capacity-building' %}{% assign card_type_name = 'Capacity building' %}
+    {% else %}{% assign card_type_name = nil %}
+  {% endcase %}
+  <div class="col-12 col-md-4">
+    <div class="card h-100 position-relative card-type-{{ project.type }}">
+      <div class="card-body d-flex flex-column">
+        <h3 class="h5 card-title mb-1">{{ project.title }}</h3>
+        <p class="card-text text-secondary small mb-2">{{ project.date | date: "%B %Y" }}</p>
+        {% if card_type_name %}<span class="wf-tag wf-tag--{{ project.type }} mb-2 align-self-start">{{ card_type_name }}</span>{% endif %}
+        {% if project.description %}<p class="card-text mb-3">{{ project.description }}</p>{% endif %}
+        <a href="{{ project.url }}" class="stretched-link text-decoration-none mt-auto">Find out more <i class="bi bi-chevron-right small" aria-hidden="true"></i><span class="visually-hidden"> about this project</span></a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<p class="mt-4 mb-0">
+  <a href="/projects/" class="text-decoration-none fs-5 fw-medium">
+    See all our work <i class="bi bi-chevron-right small"></i>
   </a>
 </p>

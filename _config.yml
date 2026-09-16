@@ -13,13 +13,9 @@ collections:
     sort_by: date
   team:
     output: true
-
-defaults:
-  - scope:
-      path: ""
-      type: projects
-    values:
-      sitemap: false
+  testimonials:
+    output: false
+    sort_by: date
 
 plugins:
   - jekyll-sitemap

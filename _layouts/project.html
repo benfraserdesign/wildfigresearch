@@ -10,14 +10,94 @@
         <p class="mb-2">
           <a href="/projects/" class="text-decoration-none">&larr; Back to all projects</a>
         </p>
-        <h1 class="mb-1">{{ page.title }}</h1>
-        <p class="text-secondary mb-4">{{ page.date | date: "%-d %B %Y" }}</p>
-        {% if page.image %}
-        <img src="{{ page.image }}" alt="{{ page.title }}" class="img-fluid rounded mb-4">
-        {% endif %}
-        <div class="project-content">
-          {{ content }}
+
+        {% case page.type %}
+          {% when 'research' %}{% assign type_name = 'Research' %}
+          {% when 'impact-evaluation' %}{% assign type_name = 'Impact and evaluation' %}
+          {% when 'capacity-building' %}{% assign type_name = 'Capacity building' %}
+          {% else %}{% assign type_name = nil %}
+        {% endcase %}
+
+        <div class="row">
+          <div class="{% if page.image %}col-lg-8{% else %}col-12{% endif %}">
+            <h1 class="mb-3">{{ page.title }}</h1>
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <p class="text-secondary mb-0">{{ page.date | date: "%-d %B %Y" }}</p>
+              {% if type_name %}
+              <span class="wf-tag wf-tag--{{ page.type }}">{{ type_name }}</span>
+              {% endif %}
+            </div>
+            {% if page.subtitle %}
+            <p class="mb-2">
+              <span class="fw-semibold">Project:</span>
+              <span class="fst-italic">{{ page.subtitle }}</span>
+            </p>
+            {% endif %}
+            {% if page.partner %}<p class="text-secondary mb-0">In partnership with {{ page.partner }}</p>{% endif %}
+
+            <div class="project-content border-top pt-4 mt-4">
+              {{ content }}
+            </div>
+
+            {% if page.outputs %}
+            <div class="d-flex flex-wrap gap-2 mt-4">
+              {% for output in page.outputs %}
+              {% assign is_pdf = false %}
+              {% if output.url contains '.pdf' %}{% assign is_pdf = true %}{% endif %}
+              {% if output.url contains '.pdf' or output.url contains '://' %}
+              <a href="{{ output.url }}" class="btn btn-primary" target="_blank" rel="noopener">{% if is_pdf %}<i class="bi bi-file-earmark-pdf me-1" aria-hidden="true"></i>{% endif %}{{ output.label }}</a>
+              {% else %}
+              <a href="{{ output.url }}" class="btn btn-primary">{{ output.label }}</a>
+              {% endif %}
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+
+          {% if page.image %}
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <img src="{{ page.image }}" alt="{{ page.title }} report cover" class="img-fluid rounded border shadow-sm sticky-lg-top" style="top: 1.5rem;">
+          </div>
+          {% endif %}
         </div>
+
+        {% assign related_testimonial = site.testimonials | where: "project", page.url | first %}
+        {% if related_testimonial %}
+        <div class="border-top pt-4 mt-4">
+          <h2 class="h5 mb-4">What {{ related_testimonial.partner }} said</h2>
+          <div class="d-flex flex-column flex-sm-row gap-3 align-items-start">
+            {% if related_testimonial.logo %}
+            <img src="{{ related_testimonial.logo }}" alt="{{ related_testimonial.partner }} logo" width="160" class="flex-shrink-0">
+            {% endif %}
+            <blockquote class="testimonial-quote mb-0">
+              {{ related_testimonial.content }}
+            </blockquote>
+          </div>
+        </div>
+        {% endif %}
+
+        {% assign ordered_projects = site.projects | sort: "date" | reverse %}
+        {% assign current_index = nil %}
+        {% for project in ordered_projects %}
+          {% if project.url == page.url %}
+            {% assign current_index = forloop.index0 %}
+          {% endif %}
+        {% endfor %}
+
+        {% if current_index %}
+          {% assign prev_index = current_index | minus: 1 %}
+          {% assign next_index = current_index | plus: 1 %}
+          <nav class="d-flex justify-content-between border-top pt-4 mt-5" aria-label="Project navigation">
+            {% if current_index > 0 %}
+              <a class="text-decoration-none d-flex align-items-center gap-2 prev-next-link" href="{{ ordered_projects[prev_index].url }}"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>{{ ordered_projects[prev_index].title }}</span></a>
+            {% else %}
+              <span></span>
+            {% endif %}
+            {% if next_index < ordered_projects.size %}
+              <a class="text-decoration-none d-flex align-items-center justify-content-end gap-2 prev-next-link ms-auto" href="{{ ordered_projects[next_index].url }}"><span class="text-end">{{ ordered_projects[next_index].title }}</span><i class="bi bi-chevron-right" aria-hidden="true"></i></a>
+            {% endif %}
+          </nav>
+        {% endif %}
       </article>
     </div>
   </main>

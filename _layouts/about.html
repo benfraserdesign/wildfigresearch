@@ -24,12 +24,12 @@ layout: default
       {% assign next_index = current_index | plus: 1 %}
       <nav class="d-flex justify-content-between border-top pt-4 mt-5" aria-label="About section navigation">
         {% if current_index > 0 %}
-          <a class="link-secondary text-decoration-none" href="{{ about_urls[prev_index] }}">&larr; {{ about_titles[prev_index] }}</a>
+          <a class="text-decoration-none d-flex align-items-center gap-2 prev-next-link" href="{{ about_urls[prev_index] }}"><i class="bi bi-chevron-left" aria-hidden="true"></i><span>{{ about_titles[prev_index] }}</span></a>
         {% else %}
           <span></span>
         {% endif %}
         {% if next_index < about_urls.size %}
-          <a class="link-secondary text-decoration-none text-end" href="{{ about_urls[next_index] }}">{{ about_titles[next_index] }} &rarr;</a>
+          <a class="text-decoration-none d-flex align-items-center justify-content-end gap-2 prev-next-link ms-auto" href="{{ about_urls[next_index] }}"><span class="text-end">{{ about_titles[next_index] }}</span><i class="bi bi-chevron-right" aria-hidden="true"></i></a>
         {% endif %}
       </nav>
     {% endif %}

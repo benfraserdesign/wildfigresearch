@@ -9,7 +9,7 @@ permalink: /projects/vcfse-workforce-wellbeing/
 description: We worked with Voluntary Action Sheffield to synthesise three years of learning from their Worker Wellbeing Workstream for frontline VCFSE workers.
 ---
 
-<p class="lead">We worked with Voluntary Action Sheffield (VAS) to synthesise three years of learning from their Worker Wellbeing Workstream – a city-wide programme designed to improve the wellbeing, skills and support available to frontline workers across Sheffield's voluntary, community, faith and social enterprise (VCFSE) sector.</p>
+<p class="lead">We worked with <a href="https://www.vas.org.uk/" target="_blank">Voluntary Action Sheffield (VAS)</a> to synthesise three years of learning from their <a href="https://www.vas.org.uk/workforce-wellbeing-workstream/" target="_blank">Worker Wellbeing Workstream</a> – a city-wide programme designed to improve the wellbeing, skills and support available to frontline workers across Sheffield's voluntary, community, faith and social enterprise (VCFSE) sector.</p>
 
 <p>Our role was to connect insights that had previously sat across separate reports, survey datasets, project progress updates, and event notes, and to weave it into a single, coherent, and usable narrative.</p>
 

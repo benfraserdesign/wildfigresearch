@@ -14,7 +14,7 @@ outputs:
     url: "/assets/pdfs/progress-happens-at-the-speed-of-trust-2026.pdf"
 ---
 
-<p class="lead">This research, carried out with Local Trust, explores what it takes to build genuine, lasting relationships between universities and communities, and what gets in the way.</p>
+<p class="lead">This research, carried out with <a href="https://localtrust.org.uk/" target="_blank">Local Trust</a>, explores what it takes to build genuine, lasting relationships between universities and communities, and what gets in the way.</p>
 
 <p>Drawing on four in-depth case studies from across the UK, we examined partnerships between universities, community organisations, schools and public bodies that have developed over time.</p>
 

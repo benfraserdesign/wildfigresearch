@@ -5,8 +5,8 @@
   --bs-primary-rgb: 117, 61, 99;
   --bs-secondary: #495057;
   --bs-secondary-rgb: 73, 80, 87;
-  --wf-capacity-building: #4b6a4f;
-  --wf-impact-evaluation: #1d70b8;
+  --wf-capacity-building: #dc8657;
+  --wf-impact-evaluation: #ac4733;
   --bs-link-color-rgb: var(--bs-primary-rgb);
   --bs-link-hover-color-rgb: 69, 41, 60;
 }
@@ -104,18 +104,18 @@ p {
 }
 
 .wf-tag--research {
-  color: #6b1c40;
-  background-color: #f9e1ec;
+  color: #56334b;
+  background-color: #f1e4ed;
 }
 
 .wf-tag--impact-evaluation {
-  color: #0c2d4a;
-  background-color: #bbd4ea;
+  color: #8a3727;
+  background-color: #f7dfd8;
 }
 
 .wf-tag--capacity-building {
-  color: #005a30;
-  background-color: #cce2d8;
+  color: #7a3f1c;
+  background-color: #fce6d1;
 }
 
 .prev-next-link {

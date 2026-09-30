@@ -14,3 +14,13 @@ description: Get in touch with Wild Fig Research to talk about a research or eva
     <i class="bi bi-envelope"></i> {{ site.email }}
   </a>
 </p>
+
+<hr class="my-4">
+
+<p>Follow us on LinkedIn.</p>
+
+<p>
+  <a href="https://www.linkedin.com/company/wild-fig-research/" class="btn btn-outline-secondary" target="_blank" rel="noopener">
+    <i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn
+  </a>
+</p>

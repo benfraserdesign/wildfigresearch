@@ -5,6 +5,7 @@ seo_title: "VCFSE workforce wellbeing"
 type: impact-evaluation
 date: 2026-09-01
 partner: "Voluntary Action Sheffield (VAS)"
+image: /assets/images/reports/towards-better-workforce.png
 permalink: /projects/vcfse-workforce-wellbeing/
 description: We worked with Voluntary Action Sheffield to synthesise three years of learning from their Worker Wellbeing Workstream for frontline VCFSE workers.
 ---

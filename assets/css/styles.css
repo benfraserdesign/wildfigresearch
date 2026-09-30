@@ -80,18 +80,32 @@ p {
 .card-img-top {
   aspect-ratio: 16 / 10;
   object-fit: cover;
+  object-position: top center;
 }
 
 .card-type-research {
-  border-top: 6px solid var(--bs-primary);
+  --wf-card-accent: var(--bs-primary);
 }
 
 .card-type-impact-evaluation {
-  border-top: 6px solid var(--wf-impact-evaluation);
+  --wf-card-accent: var(--wf-impact-evaluation);
 }
 
 .card-type-capacity-building {
-  border-top: 6px solid var(--wf-capacity-building);
+  --wf-card-accent: var(--wf-capacity-building);
+}
+
+[class*="card-type-"] {
+  border-top: 6px solid var(--wf-card-accent);
+}
+
+/* With an image, the accent sits below the image instead of above it */
+[class*="card-type-"]:has(> .card-img-top) {
+  border-top: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+
+[class*="card-type-"] > .card-img-top {
+  border-bottom: 6px solid var(--wf-card-accent);
 }
 
 .wf-tag {

@@ -97,6 +97,7 @@ description: Wild Fig Research is a Sheffield-based organisation working with co
   {% endcase %}
   <div class="col-12 col-md-4">
     <div class="card h-100 position-relative card-type-{{ project.type }}">
+      {% if project.image %}<img src="{{ project.image }}" class="card-img-top" alt="" loading="lazy">{% endif %}
       <div class="card-body d-flex flex-column">
         <h3 class="h5 card-title mb-1">{{ project.title }}</h3>
         <p class="card-text text-secondary small mb-2">{{ project.date | date: "%B %Y" }}</p>

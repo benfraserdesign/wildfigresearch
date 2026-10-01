@@ -171,3 +171,18 @@ p {
     width: 100% !important;
   }
 }
+
+.footer-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: -5rem;
+  position: relative;
+  z-index: 0;
+}
+
+/* Keep footer text above the banner where they overlap */
+footer > .container {
+  position: relative;
+  z-index: 1;
+}

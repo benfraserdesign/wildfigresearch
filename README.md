@@ -6,14 +6,16 @@ Marketing site for Wild Fig Research, an independent research organisation. Buil
 
 ```
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --destination _site
 ```
 
 Then visit http://localhost:4000.
 
+Always pass `--destination _site` when serving. `jekyll serve` rewrites the site URL to `http://localhost:4000`, and without the flag it writes into `docs/` (the deployed folder), which puts localhost links into the live site's social previews, canonical links and sitemap. `_site/` is git-ignored.
+
 ## Deploying
 
-The site builds into the `docs/` folder (`destination: docs/` in `_config.yml`), which is committed to git. Point GitHub Pages at "Deploy from a branch → main → /docs". Run `bundle exec jekyll build` and commit the resulting `docs/` changes before pushing.
+The site builds into the `docs/` folder (`destination: docs/` in `_config.yml`), which is committed to git. Point GitHub Pages at "Deploy from a branch → main → /docs". Run `bundle exec jekyll build` (not `serve`) and commit the resulting `docs/` changes before pushing.
 
 ## Before going live
 

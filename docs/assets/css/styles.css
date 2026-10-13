@@ -161,6 +161,18 @@ p {
   font-size: 1.25rem;
 }
 
+/* Lightbox prev/next are buttons, styled to match the project prev/next links */
+.lightbox-nav {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: rgba(var(--bs-link-color-rgb), 1);
+}
+
+.lightbox-nav:hover {
+  color: rgba(var(--bs-link-hover-color-rgb), 1);
+}
+
 .testimonial-quote {
   position: relative;
   font-style: italic;
@@ -205,4 +217,28 @@ p {
 footer > .container {
   position: relative;
   z-index: 1;
+}
+
+.project-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.project-photo-link:focus-visible {
+  outline: 3px solid var(--bs-primary);
+  outline-offset: 3px;
+}
+
+.project-photo-link:hover .project-photo {
+  opacity: .85;
+}
+
+.lightbox-photo {
+  max-width: 100%;
+  max-height: 75vh;
+}
+
+[data-lightbox-caption] {
+  max-width: 880px;
 }

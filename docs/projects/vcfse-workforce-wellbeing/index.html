@@ -162,6 +162,111 @@
         </div>
 
         
+        <div class="border-top pt-4 mt-4">
+          <h2 class="h5 mb-4">Photos</h2>
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+            
+            <figure class="col mb-0">
+              <a href="/assets/images/projects/vcfse-workforce-wellbeing/workshop-room.jpg" class="project-photo-link d-block rounded" data-bs-toggle="modal" data-bs-target="#photo-lightbox" data-photo-index="0">
+                <img src="/assets/images/projects/vcfse-workforce-wellbeing/workshop-room.jpg" alt="Meeting room set up for the workshop, with the report title slide 'Towards better workforce wellbeing across the VCFSE sector' on screen and flipchart paper laid out on the table" class="project-photo rounded border" loading="lazy">
+                <span class="visually-hidden">(view larger)</span>
+              </a>
+              
+            </figure>
+            
+            <figure class="col mb-0">
+              <a href="/assets/images/projects/vcfse-workforce-wellbeing/sense-checking-findings.jpg" class="project-photo-link d-block rounded" data-bs-toggle="modal" data-bs-target="#photo-lightbox" data-photo-index="1">
+                <img src="/assets/images/projects/vcfse-workforce-wellbeing/sense-checking-findings.jpg" alt="Flipchart sheets headed 'Reviewing the synthesis: sense checking the findings' with columns for what resonated, what you would change and what's missing" class="project-photo rounded border" loading="lazy">
+                <span class="visually-hidden">(view larger)</span>
+              </a>
+              
+            </figure>
+            
+            <figure class="col mb-0">
+              <a href="/assets/images/projects/vcfse-workforce-wellbeing/reflections-on-recommendations.jpg" class="project-photo-link d-block rounded" data-bs-toggle="modal" data-bs-target="#photo-lightbox" data-photo-index="2">
+                <img src="/assets/images/projects/vcfse-workforce-wellbeing/reflections-on-recommendations.jpg" alt="A participant adding sticky notes to flipcharts reflecting on the report's recommendations and on scaling, funding and sustainability" class="project-photo rounded border" loading="lazy">
+                <span class="visually-hidden">(view larger)</span>
+              </a>
+              
+            </figure>
+            
+            <figure class="col mb-0">
+              <a href="/assets/images/projects/vcfse-workforce-wellbeing/car-park-and-agenda.jpg" class="project-photo-link d-block rounded" data-bs-toggle="modal" data-bs-target="#photo-lightbox" data-photo-index="3">
+                <img src="/assets/images/projects/vcfse-workforce-wellbeing/car-park-and-agenda.jpg" alt="A 'car park' flipchart for other thoughts and feedback beside the workshop agenda from VAS and Wild Fig Research" class="project-photo rounded border" loading="lazy">
+                <span class="visually-hidden">(view larger)</span>
+              </a>
+              
+            </figure>
+            
+          </div>
+        </div>
+
+        <div class="modal fade" id="photo-lightbox" tabindex="-1" aria-labelledby="photo-lightbox-title photo-lightbox-position" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div>
+                  <h2 class="modal-title h6 mb-1" id="photo-lightbox-title">Towards better workforce wellbeing across the VCFSE sector</h2>
+                  <p class="small text-secondary mb-0" id="photo-lightbox-position">Photo <span data-lightbox-position>1</span> of 4</p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img alt="" class="lightbox-photo rounded" data-lightbox-image>
+                <p class="small text-secondary mt-2 mb-0 mx-auto" data-lightbox-caption hidden></p>
+                <p class="visually-hidden" aria-live="polite" aria-atomic="true" data-lightbox-status></p>
+              </div>
+              
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="lightbox-nav d-flex align-items-center gap-2 prev-next-link" data-lightbox-prev><i class="bi bi-chevron-left" aria-hidden="true"></i><span>Previous<span class="visually-hidden"> photo</span></span></button>
+                <button type="button" class="lightbox-nav d-flex align-items-center gap-2 prev-next-link" data-lightbox-next><span>Next<span class="visually-hidden"> photo</span></span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <script>
+          (function () {
+            var modal = document.getElementById('photo-lightbox');
+            var links = document.querySelectorAll('.project-photo-link');
+            var image = modal.querySelector('[data-lightbox-image]');
+            var caption = modal.querySelector('[data-lightbox-caption]');
+            var position = modal.querySelector('[data-lightbox-position]');
+            var status = modal.querySelector('[data-lightbox-status]');
+            var current = 0;
+
+            function show(index, announce) {
+              current = (index + links.length) % links.length;
+              var link = links[current];
+              var thumb = link.querySelector('img');
+              var figcaption = link.parentNode.querySelector('figcaption');
+              image.src = link.getAttribute('href');
+              image.alt = thumb.alt;
+              caption.textContent = figcaption ? figcaption.textContent : '';
+              caption.hidden = !figcaption;
+              position.textContent = current + 1;
+              // Announce the change when navigating; on open the dialog title is read instead
+              status.textContent = announce ? 'Photo ' + (current + 1) + ' of ' + links.length + (thumb.alt ? ': ' + thumb.alt : '') : '';
+            }
+
+            modal.addEventListener('show.bs.modal', function (event) {
+              show(parseInt(event.relatedTarget.getAttribute('data-photo-index'), 10), false);
+            });
+
+            if (links.length > 1) {
+              modal.querySelector('[data-lightbox-prev]').addEventListener('click', function () { show(current - 1, true); });
+              modal.querySelector('[data-lightbox-next]').addEventListener('click', function () { show(current + 1, true); });
+              modal.addEventListener('keydown', function (event) {
+                if (event.key === 'ArrowLeft') { show(current - 1, true); }
+                if (event.key === 'ArrowRight') { show(current + 1, true); }
+              });
+            }
+          })();
+        </script>
+        
+
+        
         
 
         

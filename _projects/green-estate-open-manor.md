@@ -9,6 +9,15 @@ partner: "The Green Estate CIC"
 image: /assets/images/reports/green-estate-title-page.png
 permalink: /projects/green-estate-open-manor/
 description: We worked with The Green Estate CIC on a community co-design project shaping a Greenprint for a more connected, resilient Manor Castle Ward.
+photos:
+  - src: /assets/images/projects/green-estate-open-manor/community-workshop.jpg
+    alt: "Residents gathered around long tables under fairy lights in a barn-style room, working on maps and notes at a community co-design session"
+  - src: /assets/images/projects/green-estate-open-manor/chalkboard-deers-home.jpg
+    alt: "A chalkboard asking 'What should our deers' home look like?', covered in children's chalk drawings of people, animals, a butterfly and the words 'Save the bees!'"
+  - src: /assets/images/projects/green-estate-open-manor/collage-board.jpg
+    alt: "A board of colourful collages combining local maps of Manor with images of honey, bee hotels, potatoes, fruit, butterflies and horses"
+  - src: /assets/images/projects/green-estate-open-manor/toasting-marshmallows.jpg
+    alt: "Several hands holding sticks to toast marshmallows over a fire pit"
 outputs:
   - label: "Read the full report"
     url: "/assets/pdfs/our-shared-story-learnings-from-the-open-manor-project.pdf"

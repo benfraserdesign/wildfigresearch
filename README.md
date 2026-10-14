@@ -13,6 +13,15 @@ Then visit http://localhost:4000.
 
 `_plugins/production_url.rb` pins the site URL to the production domain, so serving locally never writes localhost links into `docs/` (social previews, canonical links, sitemap).
 
+## Project card images
+
+A project's `image` is cropped to fit its card on the home and projects pages. Use `image_position` to choose which part stays in view: `top` (default), `middle` or `bottom`.
+
+```yaml
+image: /assets/images/reports/green-estate-title-page.png
+image_position: middle
+```
+
 ## Project photos
 
 Projects can show up to 10 photos in a gallery on their page. Put the images in `assets/images/projects/<project-slug>/` and list them in the project's front matter:

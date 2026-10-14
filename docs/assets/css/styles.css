@@ -103,6 +103,15 @@ p {
   object-position: top center;
 }
 
+/* Set per project with `image_position` in front matter */
+.card-img-pos-middle {
+  object-position: center;
+}
+
+.card-img-pos-bottom {
+  object-position: bottom center;
+}
+
 .card-type-research {
   --wf-card-accent: var(--bs-primary);
 }

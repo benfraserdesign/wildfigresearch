@@ -74,7 +74,8 @@ p {
 }
 
 #about-nav .nav-link,
-#projects-nav .nav-link {
+#projects-nav .nav-link,
+#workshop-nav .nav-link {
   color: var(--bs-secondary-color, #6c757d);
   padding: .3rem 0 .3rem .75rem;
   border-left: 2px solid var(--bs-border-color, #dee2e6);
@@ -83,9 +84,27 @@ p {
 #about-nav .nav-link.active,
 #about-nav .nav-link:hover,
 #projects-nav .nav-link.active,
-#projects-nav .nav-link:hover {
+#projects-nav .nav-link:hover,
+#workshop-nav .nav-link.active,
+#workshop-nav .nav-link:hover {
   color: var(--bs-primary);
   border-left-color: var(--bs-primary);
+}
+
+/* Highlighted key-details panel on the workshop page */
+.workshop-details {
+  background-color: #f0f1f3;
+  border-left: 4px solid var(--bs-primary);
+  border-radius: 0 var(--bs-border-radius) var(--bs-border-radius) 0;
+}
+
+.workshop-details-label {
+  flex: 0 0 4.5em;
+}
+
+/* Leave a little space above jump-link targets */
+.workshop-content section {
+  scroll-margin-top: 1.5rem;
 }
 
 .card {

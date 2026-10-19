@@ -12,6 +12,9 @@
   <title>{{ page_title }}</title>
   <meta name="description" content="{{ page_description | escape }}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {%- if page.noindex %}
+  <meta name="robots" content="noindex">
+  {%- endif %}
 
   <!-- Social sharing previews (LinkedIn, Facebook, etc.) -->
   <meta property="og:type" content="website">

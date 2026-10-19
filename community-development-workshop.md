@@ -4,6 +4,8 @@ title: Invitation to participate in a workshop exploring community development p
 seo_title: Community development workshop
 permalink: /community-development-workshop/
 scrollspy: workshop-nav
+noindex: true
+sitemap: false
 form_url: "https://docs.google.com/forms/d/e/1FAIpQLScgMee-ndC0_RpsOuuKrKkT1EvYh-QEBnpA0xDSMKtYmDutnQ/viewform"
 description: Join an online workshop for people doing community development work in England, as part of our Hidden Community Development Workers research with Local Trust. Tuesday 17 November 2026.
 ---

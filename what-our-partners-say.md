@@ -16,7 +16,7 @@ description: Testimonials from the partners and organisations Wild Fig Research 
     <div class="card h-100 position-relative">
       <div class="card-body d-flex flex-column">
         {% if testimonial.logo %}
-        <img src="{{ testimonial.logo }}" alt="{{ testimonial.partner }} logo" width="160" class="mb-3">
+        <img src="{{ testimonial.logo }}" alt="{{ testimonial.partner }} logo" class="testimonial-logo mb-3">
         {% endif %}
         <h2 class="h5 card-title mb-1">{{ testimonial.partner }}</h2>
         {% if related_project %}

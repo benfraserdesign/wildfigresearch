@@ -91,6 +91,16 @@ p {
   border-left-color: var(--bs-primary);
 }
 
+/* Partner logos on the testimonials page: same height, natural width */
+.testimonial-logo {
+  height: 64px;
+  width: auto;
+  max-width: 50%;
+  object-fit: contain;
+  object-position: left center;
+  align-self: flex-start;
+}
+
 /* Highlighted key-details panel on the workshop page */
 .workshop-details {
   background-color: #f0f1f3;
